@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
+import './Details.css';
 
 const URL = 'https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/';
 
@@ -27,11 +28,11 @@ const Details = ({ info }) => {
 
 	return (!loaded ? <div className="details">Please wait, loading...</div> :
 		<div className="details">
-			<img src={details.avatar} alt="avatar" />
-			<h3 className="name">{details.name}</h3>
-			<div className="city">{details.details.city}</div>
-			<div className="company">{details.details.company}</div>
-			<div className="position">{details.details.position}</div>
+			<img className="avatar" src={details.avatar} alt="avatar" />
+			<div className="name">{details.name}</div>
+			<div className="city">City: {details.details.city}</div>
+			<div className="company">Company: {details.details.company}</div>
+			<div className="position">Position: {details.details.position}</div>
 		</div>
 	)
 }

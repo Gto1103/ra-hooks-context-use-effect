@@ -44,7 +44,13 @@ function App() {
 				{!loaded ? <div className="loading">Please wait, loading...</div> : 
 					<>
 						<ul className='item-list'>
-							{userList.users && loaded && userList.users.map(item => <List key={item.id} {...item} handleActive={onActive} />)}
+							{userList.users && loaded &&
+								userList.users.map(item => 
+									<List 
+										key={item.id} 
+										{...item}
+										handleActive={onActive} />)
+								}
 						</ul>
 						<div className='wrapper-details'>
 							{activeUser !== null ? <Details info={activeUser} /> : null}

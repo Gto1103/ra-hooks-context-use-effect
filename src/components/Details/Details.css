@@ -1,0 +1,40 @@
+
+.wrapper-details {
+	max-width: 360px;
+}
+
+.details {
+	width: 300px;
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.avatar {
+	width: 300px;
+	border: 1px solid rgba(0, 0, 0, 0.29);
+	border-bottom: none;
+}
+
+.name {
+	font-size: 25px;
+	font-weight: 700;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.29);
+	border-bottom: none;
+	padding: 10px 0px;
+}
+
+.city, .company, .position {
+	font-size: 18px; 
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.29);
+	border-bottom: none;
+	padding: 10px 0px;
+}
+
+.position {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+}
